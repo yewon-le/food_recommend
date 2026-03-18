@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>💖 우리 뭐 먹지?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>호성 예원 오늘은 또 뭐 먹지?</h2>
+    <!-- 💑 커플 사진 -->
+    <img src="images/couple.jpg" class="couple-img">
+
+
+    <!-- 질문 영역 -->
+    <div id="question-box">
+
+        <p id="question-text">질문</p>
+
+        <select id="answer">
+            <!-- JS가 채워줌 -->
+        </select>
+
+    </div>
+
+    <button onclick="nextQuestion()" class="main-btn">
+        다음 💗
+    </button>
+
+    <div id="result" class="result-box"></div>
+    <button onclick="rerollMenu()" class="main-btn" id="reroll-btn" style="display:none;">
+        다른 메뉴 보기
+    </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
